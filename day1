@@ -32,6 +32,18 @@ Methodologies:
 - it helps to fasten the software deliver process
 
 
+What is DevOps?
+DevOps is a combination of Development (Dev) and Operations (Ops) that helps automate and integrate software development and IT operations. It aims to improve collaboration, increase deployment speed, and enhance reliability.
+
+Key Concepts in DevOps:
+1. CI/CD (Continuous Integration & Continuous Deployment) – Automating code integration, testing, and deployment.
+2. Version Control (Git, GitHub/GitLab/Bitbucket) – Tracking code changes.
+3. Infrastructure as Code (IaC) (Terraform, Ansible, CloudFormation) – Managing infrastructure using code.
+4. Containerization (Docker, Kubernetes) – Packaging and running applications consistently.
+5. Monitoring & Logging (Prometheus, Grafana, ELK Stack) – Keeping track of system health.
+6. Cloud Platforms (AWS, Azure, GCP) – Hosting applications on the cloud.
+
+
 
 DevOps tools :
 
