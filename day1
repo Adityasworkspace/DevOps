@@ -1,0 +1,46 @@
+SDLC: Software Develoment life cycle
+1. requiremnt analysis 
+2. Planning 
+3. Design 
+4. Code
+5. Deploy
+6. Maintainence & Monitor
+
+
+Methodologies:
+
+1. Waterfall ---  (it follows step by step approach)
+                \
+                  ---
+                      \
+                        ---
+                            \
+- Good for small projects, where project requirement is clear.
+- non custamizeable
+- customer feedback not involved in between project running.
+- it is not possible & difficult to change requirement once project is completed.
+
+
+2. Agile (flexible) 
+
+- in which divides bigger task into smaller parts.
+- customize feedback is necessary.
+
+3. DevOps
+
+- combination of two teams development & operations
+- it helps to fasten the software deliver process
+
+
+
+DevOps tools :
+
+1. git (source code management)
+2. docker (containerization platform) 
+3. k8s  (container management tool)
+4. terraform (IAC tool)
+5. Jenkins (CICD pipeline)
+6. datadog (monitoring)
+
+
+
