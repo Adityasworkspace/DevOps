@@ -52,26 +52,70 @@ You should see output like git version 2.x.x.
   
 
 Commamds for using git:
+ Step 1: Create/Edit the README.md File
+Run the following command to create/edit a README.md file:
 
-1. Check Git Version =
-git --version
+bash
+Copy
+Edit
+echo "# Git Commands Cheat Sheet" > README.md && nano README.md
+Then, paste the following content:
 
-2. to add file in staging area =
-git add <filename>
+markdown
+Copy
+Edit
+# 🚀 Git Commands Cheat Sheet
 
-3. to verify staging area =
-git status
+Git is a **version control system** that helps track changes in code. Below are various types of Git commands categorized by their functions.
 
-4. to commit the file =
-git commit -m "msg"
+---
 
-5. to verify commits =
-git log
+## 📌 1. Basic Git Setup
+```bash
+git --version             # Check Git version
+git config --global user.name "Your Name"   # Set username
+git config --global user.email "your-email@example.com"  # Set email
 
-6. Configure Git (Only Once) =
-git config --global user.name "Your Name" - 
-git config --global user.email "your-email@example.com"
+📌 2. Repository Management
+git init                  # Initialize a new Git repository
+git clone <repo-URL>       # Clone a remote repository
+git remote add origin <repo-URL>  # Link local repo to remote
+git remote -v             # Show remote connections
 
-7. to list the user info =
-git config --global --list
+📌 3. Staging & Committing Changes
+git status                # Check status of working directory
+git add <file>            # Add a specific file to staging
+git add .                 # Add all files to staging
+git commit -m "Your message"  # Commit changes with a message
 
+📌 4. Branching & Merging
+git branch                # List branches
+git branch new-branch     # Create a new branch
+git checkout new-branch   # Switch to new branch
+git checkout -b new-branch  # Create & switch to new branch
+git merge new-branch      # Merge new-branch into main
+git branch -d new-branch  # Delete a branch
+
+📌 5. Pushing & Pulling Changes
+git push origin main      # Push changes to GitHub
+git push -u origin main   # Push and set upstream branch
+git pull origin main      # Pull latest changes from GitHub
+git fetch                 # Fetch latest changes without merging
+
+📌 6. Undo & Reset Changes
+git reset --soft HEAD~1   # Undo last commit but keep changes
+git reset --hard HEAD~1   # Undo last commit & delete changes
+git revert <commit-hash>  # Revert a specific commit
+
+📌 7. Viewing History & Logs
+git log                   # Show commit history
+git log --oneline --graph --decorate --all  # Compact log view
+git diff                  # Show unstaged differences
+git diff --staged         # Show staged differences
+
+📌 8. Deleting & Untracking Files
+git rm <file>             # Remove file from tracking & delete it
+git rm --cached <file>    # Remove file from tracking but keep it
+
+🔥 Bonus: One-Liner to Upload This File to GitHub
+git add README.md && git commit -m "Added Git commands cheat sheet" && git push origin main
